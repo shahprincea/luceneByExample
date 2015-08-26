@@ -22,12 +22,7 @@ public class LuceneDocument {
     }
 
     public boolean removeField(LuceneField field){
-        if(!fieldMap.containsKey(field.name())){
-            return false;
-        }else{
-            fieldMap.remove(field.name());
-            return true;
-        }
+        return removeField(field.name());
     }
 
     public boolean removeField(String fieldName){
