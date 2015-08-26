@@ -34,8 +34,7 @@ public class TestIndexer{
         LuceneIndexer luceneIndexer = new LuceneIndexer(".\\mainIndex", ".\\taxoIndex");
         try {
             LuceneDocument newDoc1 = new LuceneDocument();
-            FieldType type = null;
-            type = new FieldType();
+            FieldType type = new FieldType();
             type.setStored(true);
             type.setTokenized(false);
             type.setNumericType(NumericType.LONG);
